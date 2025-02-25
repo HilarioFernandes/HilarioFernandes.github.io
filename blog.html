@@ -6,7 +6,7 @@ title: Blog
 <ul>
     {% for post in site.posts %}
         <li>
-            <a href="https://github.com/HilarioFernandes/HilarioFernandes.github.io/blob/main{{ post.path }}">{{ post.title }}</a> - <em>{{ post.date | date: "%B %d, %Y" }}</em>
+            <a href="https://github.com/HilarioFernandes/HilarioFernandes.github.io/blob/main/{{ post.path }}">{{ post.title }}</a> - <em>{{ post.date | date: "%B %d, %Y" }}</em>
         </li>
     {% endfor %}
 </ul>
