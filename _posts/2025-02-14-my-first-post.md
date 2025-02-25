@@ -1,0 +1,6 @@
+---
+layout: post
+title: "My First Blog Post"
+date: 2025-02-14
+---
+This is my first post using Jekyll!
