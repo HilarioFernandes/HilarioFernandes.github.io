@@ -1,61 +1,27 @@
----
-layout: null
----
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}"></noscript>
-    <!-- Add Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="is-preload">
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
+    <main>
+        {{ content }}
+    </main>
 
-        <!-- Header -->
-        <header id="header">
-            <div class="logo">
-                <span class="icon fa-pen"></span>
-            </div>
-            <div class="content">
-                <div class="inner">
-                    <h1>{{ site.title }}</h1>
-                    <p>{{ site.description }}</p>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-					<li><a href="/blog.html"><span class="icon solid fa-align-justify">Blog</span></a></li>
-					<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Main Content -->
-        <div id="main">
-            <article>
-                <h2>{{ page.title }}</h2>
-                {{ content }}
-            </article>
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <p>© {{ site.time | date: "%Y" }} Your Name. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-        </footer>
-
-    </div>
-
-    <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-
+    <footer>
+        <p>© {{ site.time | date: "%Y" }} Your Name</p>
+    </footer>
 </body>
 </html>
