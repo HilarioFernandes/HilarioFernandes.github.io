@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "On learning new topics via reading and writing"
 date: 2025-02-26
 category: Philosophy, thoughts and ramblings
