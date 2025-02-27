@@ -14,7 +14,7 @@ title: Blog
         {% for post in site.posts %}
             {% if post.category == category %}
                 <li>
-                    <a href="https://github.com/HilarioFernandes/HilarioFernandes.github.io/blob/main/{{ post.path }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a> - <em>{{ post.date | date: "%B %d, %Y" }}</em>
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - <em>{{ post.date | date: "%B %d, %Y" }}</em>
                 </li>
             {% endif %}
         {% endfor %}
