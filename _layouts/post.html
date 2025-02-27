@@ -1,8 +1,50 @@
----
-layout: default
----
-<article>
-    <h1>{{ page.title }}</h1>
-    <p><em>Published on {{ page.date | date: "%B %d, %Y" }}</em></p>
-    <div>{{ content }}</div>
-</article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <!-- MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-to-blog {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-to-blog">
+        <a href="{{ '/blog' | relative_url }}">&larr; Back to Blog Home</a>
+    </div>
+
+    <article>
+        <h1>{{ page.title }}</h1>
+        <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+        {{ content }}
+    </article>
+
+    <div class="back-to-blog">
+        <a href="{{ '/blog' | relative_url }}">&larr; Back to Blog Home</a>
+    </div>
+</body>
+</html>
