@@ -2631,3 +2631,49 @@ input, select, textarea {
 				}
 
 	}
+
+	/* Mobile-specific side panel */
+	@media screen and (max-width: 768px) {
+
+		/* Hide the header by default */
+		#header {
+			position: fixed;
+			left: -250px; /* hidden off-screen */
+			top: 0;
+			width: 250px;
+			height: 100%;
+			background: #222;
+			overflow-y: auto;
+			transition: left 0.3s ease;
+			z-index: 1000;
+		}
+
+		/* Slide in when open */
+		#header.open {
+			left: 0;
+		}
+
+		/* Show menu toggle icon */
+		#menu-toggle {
+			display: block;
+			position: fixed;
+			top: 15px;
+			left: 15px;
+			font-size: 24px;
+			color: #fff;
+			z-index: 1100;
+			cursor: pointer;
+		}
+
+		/* Optional: dim main content when menu is open */
+		#main.dimmed {
+			opacity: 0.5;
+			pointer-events: none;
+			transition: opacity 0.3s ease;
+		}
+	}
+
+	/* Hide toggle on larger screens */
+	#menu-toggle {
+		display: none;
+	}
