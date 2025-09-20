@@ -100,6 +100,33 @@
             border-top: 0.0625rem solid #eee; /* 1px → 0.0625rem */
             margin: 2em 0;
         }
+
+        /* Mobile font adjustment */
+        @media (max-width: 600px) {
+            body {
+                font-size: 1rem; /* smaller font for mobile (20px → 16px) */
+                padding: 1.5rem 1rem; /* less padding for small screens */
+            }
+
+            article {
+                padding: 1rem 1.5rem; /* smaller article padding */
+            }
+
+            h1 {
+                font-size: 1.8rem; /* shrink main heading */
+            }
+
+            h2, h3 {
+                font-size: 1.2rem; /* optional: shrink subheadings slightly */
+            }
+
+            .back-to-blog a {
+                font-size: 0.85rem; /* smaller button text */
+                padding: 0.25rem 0.5rem; /* smaller button padding */
+            }
+        }
+
+
     </style>
 
 </head>
