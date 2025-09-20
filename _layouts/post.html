@@ -13,24 +13,24 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            font-size: 20px;
+            font-size: 1.25rem; /* 20px → 1.25rem */
             line-height: 1.7;
             margin: 0;
-            padding: 40px 20px;
+            padding: 2.5rem 1.25rem; /* 40px 20px → 2.5rem 1.25rem */
             background-color: #fafafa;
         }
 
         article {
-            max-width: 800px;
+            max-width: 50rem; /* 800px → 50rem */
             margin: auto;
-            padding: 20px 40px;
+            padding: 1.25rem 2.5rem; /* 20px 40px → 1.25rem 2.5rem */
             background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-radius: 0.625rem; /* 10px → 0.625rem */
+            box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.05); /* 2px 8px → 0.125rem 0.5rem */
         }
 
         h1 {
-            font-size: 2.4em;
+            font-size: 2.4rem; /* 2.4em is fine relative to body */
             margin-bottom: 0.2em;
             color: #222;
         }
@@ -43,7 +43,7 @@
 
         .post-meta {
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.9rem; /* 0.9em → 0.9rem for consistency */
             margin-bottom: 2em;
         }
 
@@ -57,17 +57,17 @@
         }
 
         .back-to-blog {
-            max-width: 800px;
-            margin: 0 auto 20px auto;
+            max-width: 50rem;
+            margin: 0 auto 1.25rem auto; /* 20px → 1.25rem */
         }
 
         .back-to-blog a {
             display: inline-block;
-            font-size: 0.95em;
+            font-size: 0.95rem; /* 0.95em → 0.95rem */
             color: #007BFF;
             background: #f0f8ff;
-            padding: 6px 12px;
-            border-radius: 6px;
+            padding: 0.375rem 0.75rem; /* 6px 12px → 0.375rem 0.75rem */
+            border-radius: 0.375rem; /* 6px → 0.375rem */
             transition: background 0.2s;
         }
 
@@ -81,8 +81,8 @@
         }
 
         blockquote {
-            border-left: 4px solid #007BFF;
-            padding-left: 1em;
+            border-left: 0.25rem solid #007BFF; /* 4px → 0.25rem */
+            padding-left: 1rem;
             color: #555;
             font-style: italic;
             margin: 1.5em 0;
@@ -90,17 +90,18 @@
 
         pre, code {
             background: #f5f5f5;
-            padding: 0.2em 0.4em;
-            border-radius: 4px;
+            padding: 0.2rem 0.4rem; /* 0.2em 0.4em is okay, using rem would also work */
+            border-radius: 0.25rem; /* 4px → 0.25rem */
             font-family: "Courier New", monospace;
         }
 
         hr {
             border: none;
-            border-top: 1px solid #eee;
+            border-top: 0.0625rem solid #eee; /* 1px → 0.0625rem */
             margin: 2em 0;
         }
     </style>
+
 </head>
 <body>
     <div class="back-to-blog">
