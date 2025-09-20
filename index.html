@@ -33,9 +33,6 @@
 
 	<body class="is-preload">
 
-		<!-- Mobile menu toggle -->
-		<a href="#" id="menu-toggle" class="menu-icon"><span class="fa fa-bars"></span></a>
-
 		<!-- Header -->
 			<div id="header">
 
@@ -168,18 +165,5 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-			<script>
-				const menuToggle = document.getElementById('menu-toggle');
-				const header = document.getElementById('header');
-				const main = document.getElementById('main');
-
-				menuToggle.addEventListener('click', function(e) {
-					e.preventDefault();
-					header.classList.toggle('open');
-					main.classList.toggle('dimmed'); // optional
-				});
-			</script>
-
 	</body>
 </html>
-
