@@ -2576,13 +2576,12 @@ input, select, textarea {
 	}
 
 /* Mobile */
-
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 8pt;
+				font-size: 14pt;
 			}
 
 			h2 {
@@ -2593,6 +2592,28 @@ input, select, textarea {
 
 			.container {
 				padding: 0 15px 0 15px;
+			}
+
+		/* Blog post content */
+			article {
+				font-size: 0.95rem;   /* ~15px */
+				line-height: 1.6;
+			}
+
+			article h1 {
+				font-size: 1.5rem;    /* ~24px */
+			}
+
+			article h2 {
+				font-size: 1.25rem;   /* ~20px */
+			}
+
+			article h3 {
+				font-size: 1.1rem;    /* ~18px */
+			}
+
+			article p {
+				margin-bottom: 1rem;
 			}
 
 		/* List */
