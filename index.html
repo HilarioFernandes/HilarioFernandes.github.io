@@ -10,7 +10,51 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+		/* -------- Mobile top navigation -------- */
+		@media screen and (max-width: 768px) {
+
+			/* Hide the sidebar header */
+			#header {
+				display: none;
+			}
+
+			/* Turn nav into a fixed top bar */
+			#nav {
+				display: flex;
+				justify-content: center;
+				background: #222;
+				padding: 10px 0;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 1000;
+			}
+
+			#nav ul {
+				display: flex;
+				gap: 15px;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			#nav li a {
+				color: white;
+				text-decoration: none;
+				font-size: 16px;
+			}
+
+			/* Push content down so it's not hidden behind nav */
+			#main {
+				margin-top: 60px;
+			}
+		}
+		</style>
 	</head>
+
 	<script>
     document.addEventListener("DOMContentLoaded", function() {
         var links = document.querySelectorAll("#nav a");
@@ -29,141 +73,130 @@
             });
         });
     });
-</script>
+	</script>
 
 	<body class="is-preload">
 
-		<!-- Header -->
-			<div id="header">
+		<!-- Header (sidebar for desktop/tablet) -->
+		<div id="header">
 
-				<div class="top">
-
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar2.jpg" alt="" /></span>
-							<h1 id="title">Hilario Fernandes</h1>
-							<p>PhD in Statistics</p>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="/blog.html"><span class="icon solid fa-align-justify">Blog</span></a></li>
-							</ul>
-						</nav>
-
+			<div class="top">
+				<!-- Logo -->
+				<div id="logo">
+					<span class="image avatar48"><img src="images/avatar2.jpg" alt="" /></span>
+					<h1 id="title">Hilario Fernandes</h1>
+					<p>PhD in Statistics</p>
 				</div>
 
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://github.com/HilarioFernandes" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/hilario-fernandes-0a1412191/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						</ul>
-
-				</div>
-
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+						<li><a href="/blog.html"><span class="icon solid fa-align-justify">Blog</span></a></li>
+					</ul>
+				</nav>
 			</div>
+
+			<div class="bottom">
+				<!-- Social Icons -->
+				<ul class="icons">
+					<li><a href="https://github.com/HilarioFernandes" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/hilario-fernandes-0a1412191/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				</ul>
+			</div>
+
+		</div>
 
 		<!-- Main -->
-			<div id="main">
+		<div id="main">
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+			<!-- Portfolio -->
+			<section id="portfolio" class="two">
+				<div class="container">
 
-							<header>
-								<h2>Portfolio</h2>
-							</header>
+					<header>
+						<h2>Portfolio</h2>
+					</header>
 
-							<p>Below you may find my projects (newest to oldest).</p>
+					<p>Below you may find my projects (newest to oldest).</p>
 
-							<div class="row">
+					<div class="row">
 
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>WIP</h3>
-										</header>
-										<p>WIP</p>
-									</article>
-								</div>
-
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/HilarioFernandes/Exam-Tool" class="image fit"><img src="images/Exam Tool.png" alt="" /></a>
-										<header>
-											<h3>Markdown + LLM Exam Tool</h3>
-										</header>
-										<p>Exam Tool | Python</p>
-									</article>
-								</div>
-
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/HilarioFernandes/GAMs" class="image fit"><img src="images/GAMs.png" alt="" /></a>
-										<header>
-											<h3>Generalized additive models</h3>
-										</header>
-										<p>GAMs | R</p>
-									</article>
-								</div>
-
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/HilarioFernandes/Classification-algorithms" class="image fit"><img src="images/Class.png" alt="" /></a>
-										<header>
-											<h3>Classification algorithms</h3>
-										</header>
-										<p>Classification | R</p>
-									</article>
-								</div>
-							</div>
-
-
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+								<header>
+									<h3>WIP</h3>
+								</header>
+								<p>WIP</p>
+							</article>
 						</div>
-					</section>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<p>I'm a data scientist with a background in statistical modeling, predictive analysis, and hands-on work in Python and R. My experience spans applications in materials science, engineering, and environmental data, often through collaborative research projects. I enjoy bridging theory and practice, whether that's preparing manuscripts, analyzing complex datasets, or sharing results clearly.
-								I hold a PhD in Statistics and an MSc in Pure and Applied Mathematics, and I've had the chance to study and work both in Brazil and abroad, including as a visiting scholar at U.S. universities. I work in both Portuguese (native) and English (advanced).</p>
-
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<a href="https://github.com/HilarioFernandes/Exam-Tool" class="image fit"><img src="images/Exam Tool.png" alt="" /></a>
+								<header>
+									<h3>Markdown + LLM Exam Tool</h3>
+								</header>
+								<p>Exam Tool | Python</p>
+							</article>
 						</div>
-					</section>
 
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<a href="https://github.com/HilarioFernandes/GAMs" class="image fit"><img src="images/GAMs.png" alt="" /></a>
+								<header>
+									<h3>Generalized additive models</h3>
+								</header>
+								<p>GAMs | R</p>
+							</article>
+						</div>
 
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<a href="https://github.com/HilarioFernandes/Classification-algorithms" class="image fit"><img src="images/Class.png" alt="" /></a>
+								<header>
+									<h3>Classification algorithms</h3>
+								</header>
+								<p>Classification | R</p>
+							</article>
+						</div>
+					</div>
 
-			</div>
+				</div>
+			</section>
+
+			<!-- About Me -->
+			<section id="about" class="three">
+				<div class="container">
+
+					<header>
+						<h2>About Me</h2>
+					</header>
+
+					<p>I'm a data scientist with a background in statistical modeling, predictive analysis, and hands-on work in Python and R. My experience spans applications in materials science, engineering, and environmental data, often through collaborative research projects. I enjoy bridging theory and practice, whether that's preparing manuscripts, analyzing complex datasets, or sharing results clearly.
+					I hold a PhD in Statistics and an MSc in Pure and Applied Mathematics, and I've had the chance to study and work both in Brazil and abroad, including as a visiting scholar at U.S. universities. I work in both Portuguese (native) and English (advanced).</p>
+
+				</div>
+			</section>
+
+		</div>
 
 		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Hilario Fernandes. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; Hilario Fernandes. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
