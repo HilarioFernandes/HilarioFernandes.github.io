@@ -1,5 +1,5 @@
 ---
-title: "On the Terminology of Data Splits in Machine Learning"
+title: "On the terminology of data splits in machine learning"
 date: 2025-08-30
 category: Statistics, mathematics and computer science
 layout: post
