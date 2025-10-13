@@ -54,3 +54,8 @@ Using simulation studies to evaluate statistical methods.
 <a id="pearlmackenzie2018">Pearl, J. & Mackenzie, D. (2018).</a>  
 *The Book of Why: The New Science of Cause and Effect.*  
 Basic Books.
+
+<!--book, three authors-->
+<a id="wittgensteinhackerschulte2010"> Wittgenstein, L. & Hacker, P. & Schulte, J. (2010).</a>  
+*Philosophical Investigations.*  
+Wiley.
