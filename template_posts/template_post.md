@@ -30,6 +30,8 @@ For books, technical reports and others, the author convention above shall be us
 
 Some quotation or citation from a book ([Pearl and Mackenzie, 2018](#pearlmackenzie2018)).
 
+Some quotation or citation from a webpage ([Fernandes, 2025](#fernandes2025)).
+
 
 <!--APA-based style reference template adapted from https://stackoverflow.com/questions/26587527/cite-a-paper-using-github-markdown-syntax-->
 
@@ -59,3 +61,9 @@ Basic Books.
 <a id="wittgensteinhackerschulte2010"> Wittgenstein, L. & Hacker, P. & Schulte, J. (2010).</a>  
 *Philosophical Investigations.*  
 Wiley.
+
+<!--webpage, one author-->
+<a id="fernandes2025"> Fernandes, H. (2025).</a>  
+*A Non-philosopher's Introduction to Wittgenstein.*  
+Personal Blog.
+https://hilariofernandes.github.io/wittgenstein/2025/10/13/anpitw.html
