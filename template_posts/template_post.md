@@ -1,14 +1,26 @@
 ---
-title: "title"
-date: 2025-08-30
-category: Statistics, mathematics and computer science
+title: "template post"
+date: yyyy-mm-dd
+category: None
 layout: post
 ---
 
 
-# Markdown blog post template
+## Section title
 
-sample Tex
+Section titles should begin with the '##' prefix.
+
+## Lists
+
+Unnumbered list example:
+
+- Item 1
+- Item 2
+
+Numbered list example:
+
+1. asd
+2. asd
 
 ## Mathematical equations
 
