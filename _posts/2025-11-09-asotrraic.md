@@ -1,6 +1,6 @@
 ---
 title: "A Summary of 'The Resolute Reading and its Critics'"
-date: 2025-11-04
+date: 2025-11-09
 category: Wittgenstein
 layout: post
 ---
@@ -11,9 +11,7 @@ The resolute reading of the *Tractatus Logico-Philosophicus* is central to under
 
 As ([Koethe, 2003](#koethe2003)) points out, "It is customary to divide Wittgenstein’s work into two broad phases, the first culminating in the *Tractatus*, and the second comprising the writings that began upon his return to philosophy in 1929 and culminating in the *Investigations*."
 
-On the other hand, as Bronzo contrasts, "Conant and Diamond regard Wittgenstein’s
-writings from the Thirties as belonging to a crucial transitional phase in his thought. They claim that although he began to unravel and unmask the unwitting metaphysical commitments of the Tractatus as soon as he returned to philosophy in 1929, Wittgenstein continued for several years to pursue the ideal of a single method of clarification. In the late Thirties, however, he came to single out this very ideal as the central locus of philosophical dogmatism in his previous thought [...] Thus, according to Conant and Diamond, if we wish
-to speak of a “turn” in Wittgenstein’s thought, we shouldn’t date it to 1929 (as is commonly done), but rather to around 1936– 37, when Wittgenstein moved to a new perspective under which there is assumed to be no single method of philosophy".
+On the other hand, as Bronzo contrasts, "Conant and Diamond regard Wittgenstein’s writings from the Thirties as belonging to a crucial transitional phase in his thought. They claim that although he began to unravel and unmask the unwitting metaphysical commitments of the Tractatus as soon as he returned to philosophy in 1929, Wittgenstein continued for several years to pursue the ideal of a single method of clarification. In the late Thirties, however, he came to single out this very ideal as the central locus of philosophical dogmatism in his previous thought [...] Thus, according to Conant and Diamond, if we wish to speak of a “turn” in Wittgenstein’s thought, we shouldn’t date it to 1929 (as is commonly done), but rather to around 1936– 37, when Wittgenstein moved to a new perspective under which there is assumed to be no single method of philosophy".
 
 This re-dating, and how it characterizes Wittgenstein's early and later works as not divided by a sharp rupture in philosophical aim but by a gradual shift in philosophical method, reinforces the resolute readers' claim of continuity. Regardless, a substantial secondary literature has been developed over the decades on how to read the early work. 
 
@@ -27,8 +25,7 @@ Standard (or irresolute) readings maintain that "the elucidatory propositions of
 
 On the other hand, a resolute reading is "one which maintains that that the sentences that compose the body of the text must be recognized to be simply nonsensical – i.e. seen as strings of words that convey no content whatsoever [...] there is, from the point of view of logic, only one kind of nonsense, that is strings of signs that fail to express any content because of a failure on our part to assign them a determinate meaning."
 
-Another category of reading is the "neo-positivist" one, which was dominant in the 1930s and 1940s: "These interpretations reject with great emphasis the idea of ineffable contents that cannot be said but only shown [...] for the neo-positivists, the Tractatus
-is a straightforwardly theoretical book: its aim is to articulate a theory of meaning that draws the bounds of sense, and which can thus be used to sort out meaningful propositions from nonsensical pseudo-propositions."
+Another category of reading is the "neo-positivist" one, which was dominant in the 1930s and 1940s: "These interpretations reject with great emphasis the idea of ineffable contents that cannot be said but only shown [...] for the neo-positivists, the Tractatus is a straightforwardly theoretical book: its aim is to articulate a theory of meaning that draws the bounds of sense, and which can thus be used to sort out meaningful propositions from nonsensical pseudo-propositions."
 
 The final section of Bronzo's paper discusses the so-called "Elucidatory reading", which can be seen as a "middle way" between resolute and standard readings. In such interpretations, "the Tractatus does not aim to put forth a metaphysical doctrine that grounds the functioning of our language [...] The actual aim of the Tractatus [...] is to “elucidate” the functioning of our language. This process is supposed to confer to the reader a kind of understanding." 
 
@@ -51,7 +48,7 @@ Bronzo discusses several lines of criticism directed at the resolute readings:
 - Textual criticisms: how do the resolute readings fit (or fail to fit) the structure and wording of the Tractatus itself (or later Wittgenstein's texts that criticize the *Tractatus*, such as the *Philosophical Investigations*)? Is the reading interpretively faithful?
 - Philosophical criticisms: are the proposals of the resolute readings philosophically plausible or internally coherent, regardless of the textual evidence? 
 
-To keep this blog post relatively short, we shall not go over the responses that resolute readers have proposed to these criticisms. We may now list the criticisms in the categories mentioned above (which are not mutually exclusive):
+To keep this blog post relatively short, we shall not go over the responses that resolute readers have proposed to these criticisms, instead briefly covering the criticisms following the categories above (which are not mutually exclusive):
 
 ### Textual Criticisms
 
@@ -69,7 +66,7 @@ To keep this blog post relatively short, we shall not go over the responses that
 
 ## Conclusions
 
-This overview has sought to summarize the main contributions of ([Bronzo, 2012](#bronzo2012)) . In the paper, the main schools of readings on Wittgenstein's *Tractatus Logico-Philosophicus* are introduced. Bronzo also summarizes the main criticisms of the resolute readers, along with their responses.
+This overview has sought to summarize the main contributions of ([Bronzo, 2012](#bronzo2012)). In the paper, the main schools of readings on Wittgenstein's *Tractatus Logico-Philosophicus* are introduced. Bronzo also summarizes the main criticisms of the resolute readers, along with their responses.
 
 The text is essential for those who want to understand the divide in interpretive lines on the early Wittgenstein, and it highlights the possibilities of connections between the early and later works.
 
