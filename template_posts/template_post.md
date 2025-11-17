@@ -78,4 +78,6 @@ Wiley.
 <a id="fernandes2025"> Fernandes, H. (2025).</a>  
 *A Non-philosopher's Introduction to Wittgenstein.*  
 Personal Blog.
-https://hilariofernandes.github.io/wittgenstein/2025/10/13/anpitw.html
+<a href="https://hilariofernandes.github.io/wittgenstein/2025/10/13/anpitw.html" class="reference-link">
+  https://hilariofernandes.github.io/<wbr>wittgenstein/<wbr>2025/<wbr>10/<wbr>13/<wbr>anpitw.html
+</a>

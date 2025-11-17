@@ -70,7 +70,15 @@ This overview has sought to summarize the main contributions of ([Bronzo, 2012](
 
 The text is essential for those who want to understand the divide in interpretive lines on the early Wittgenstein, and it highlights the possibilities of connections between the early and later works.
 
-In my next post, I shall attempt to place the way I personally read the *Tractatus* within this landscape, noting of course that my view may be unsophisticated or wrong due to my lack of background in philosophy.
+On previous blogs posts, such as ([Fernandes, 2025](#fernandes2025)), I have mentioned a reading framework that connects the aims of the early and later Wittgenstein. I do not think that this framework is aligned (in principle) with either resolute or other readings (due to a lack of specificity regarding the conception of nonsense and other points), but a case could be made for a "resoluteness" of this framework given its antitheoretical emphasis. With that said, I will mention that some of the answers of resolute readers to criticisms don't seem satisfying to me. I'll give one example.
+
+If nonsense is meant to be interpreted in an austere sense, as the resolute reading sees it, why can't its propositions be replaced by "piggly tiggle wiggle"? Resolute readers draw from the Fregean distinction between logical and psychological forms of nonsense: the sentences of the *Tractatus* are as logically (but not psychologically) nonsensical as gibberish. Diamond in particular compared "the elucidatory procedure of the Tractatus with impossibility proofs in mathematics and with the solution of riddles." However, I feel that the disanalogies between these two cases (at least the mathematical example) and the Tractatus are perhaps stronger than initially thought.
+
+In the case of impossibility proofs, for instance, Diamond argues that "the result of a proof of impossibility is that the starting hypothesis, as well as the various steps of the proof, had actually no determinate sense; they turn out to have had only a “transitional sense”." I dispute that on the basis that first order logic doesn't "know" what 'nonsense' is, only true or false propositions. In an impossibility proof, a false premise and valid logical implications lead one to a clearly false proposition, which in turns guarantees the falsehood of the premise (given all other premises hold). This is quite different from what the *Tractatus* does, which in my view is closer to self-referential paradoxes (such as Russel's paradox): if one allows a "suffficiently powerful" language/theory to make unrestricted references to itself, then paradoxes arise.
+
+Therefore, one point of contention between my reading framework (not as it is, but a more specific development of it) and the resolute readings is that the *Tractatus* is not merely a performative book, in which nonsense disguised as sense leads the reader to acknowledge his own dogmatic temptations and be content with silence. I see the *Tractatus* as a book that genuinely attempts to be a doctrinal work, *despite* its inevitable self-deconstruction. 
+
+Otherwise, it's quite difficult to make sense of Wittgenstein when, in a letter to Russell from 1919, he claims that "the “main point” of the book “is the theory of what can be expressed (gesagt) by propositions – i.e. by language – (and, which comes to the same, what can be thought) and what can not be expressed by prop[osition]s, but only shown (gezeigt); which, I believe, is the cardinal problem of philosophy.”" Also, the very existence of the 1929 paper “Some Remarks on Logical Form”, in which "Wittgenstein mounts an effort to salvage his account of elementary propositions from the difficulty posed by propositions ascribing colors, and qualities that come in degrees." If the book has a fully therapeutic/performative aim from the start, it's difficult to understand why Wittgenstein would embark at such an endeavor.
 
 ## References
 
@@ -78,6 +86,13 @@ In my next post, I shall attempt to place the way I personally read the *Tractat
 <a id="bronzo2012"> Bronzo, S. (2012).</a>  
 The resolute reading and its critics: An introduction to the literature.  
 *Wittgenstein-Studien*, 3(1), 45–80.
+
+<a id="fernandes2025"> Fernandes, H. (2025).</a>  
+*A Non-philosopher's Introduction to Wittgenstein.*  
+Personal Blog.
+<a href="https://hilariofernandes.github.io/wittgenstein/2025/10/13/anpitw.html" class="reference-link">
+  https://hilariofernandes.github.io/<wbr>wittgenstein/<wbr>2025/<wbr>10/<wbr>13/<wbr>anpitw.html
+</a>
 
 <a id="koethe2003"> Koethe, J. (2003).</a>  
 On the ‘Resolute’Reading of the Tractatus.  
