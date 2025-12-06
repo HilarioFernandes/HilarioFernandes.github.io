@@ -1,6 +1,6 @@
 ---
 title: "A Summary of 'The Resolute Reading and its Critics'"
-date: 2025-11-09
+date: 2025-11-16
 category: Wittgenstein
 layout: post
 ---
@@ -66,7 +66,7 @@ To keep this blog post relatively short, we shall not go over the responses that
 
 ## Conclusions
 
-This overview has sought to summarize the main contributions of ([Bronzo, 2012](#bronzo2012)). In the paper, the main schools of readings on Wittgenstein's *Tractatus Logico-Philosophicus* are introduced. Bronzo also summarizes the main criticisms of the resolute readers, along with their responses.
+This overview has sought to summarize the main contributions of ([Bronzo, 2012](#bronzo2012)). In the paper, the main schools of readings on Wittgenstein's *Tractatus Logico-Philosophicus* are introduced. Bronzo also summarizes the main criticisms directed towards resolute readers, along with their responses.
 
 The text is essential for those who want to understand the divide in interpretive lines on the early Wittgenstein, and it highlights the possibilities of connections between the early and later works.
 
@@ -74,9 +74,9 @@ On previous blogs posts, such as ([Fernandes, 2025](#fernandes2025)), I have men
 
 If nonsense is meant to be interpreted in an austere sense, as the resolute reading sees it, why can't its propositions be replaced by "piggly tiggle wiggle"? Resolute readers draw from the Fregean distinction between logical and psychological forms of nonsense: the sentences of the *Tractatus* are as logically (but not psychologically) nonsensical as gibberish. Diamond in particular compared "the elucidatory procedure of the Tractatus with impossibility proofs in mathematics and with the solution of riddles." However, I feel that the disanalogies between these two cases (at least the mathematical example) and the Tractatus are perhaps stronger than initially thought.
 
-In the case of impossibility proofs, for instance, Diamond argues that "the result of a proof of impossibility is that the starting hypothesis, as well as the various steps of the proof, had actually no determinate sense; they turn out to have had only a “transitional sense”." I dispute that on the basis that first order logic doesn't "know" what 'nonsense' is, only true or false propositions. In an impossibility proof, a false premise and valid logical implications lead one to a clearly false proposition, which in turns guarantees the falsehood of the premise (given all other premises hold). This is quite different from what the *Tractatus* does, which in my view is closer to self-referential paradoxes (such as Russel's paradox): if one allows a "suffficiently powerful" language/theory to make unrestricted references to itself, then paradoxes arise.
+In the case of impossibility proofs, for instance, Diamond argues that "the result of a proof of impossibility is that the starting hypothesis, as well as the various steps of the proof, had actually no determinate sense; they turn out to have had only a “transitional sense”." That could be disputed on the basis that first order logic doesn't "know" what 'nonsense' is, only true or false propositions. In an impossibility proof, a false premise and valid logical implications lead one to a visibly false proposition (a contradiction), which in turns guarantees the falsehood of the premise (given that all other premises hold). This is quite different from what the *Tractatus* does, which in my view is closer to self-referential paradoxes (such as Russel's paradox): if one allows a "suffficiently powerful" language/theory to make unrestricted references to itself, then issues arise.
 
-Therefore, one point of contention between my reading framework (not as it is, but a more specific development of it) and the resolute readings is that the *Tractatus* is not merely a performative book, in which nonsense disguised as sense leads the reader to acknowledge his own dogmatic temptations and be content with silence. I see the *Tractatus* as a book that genuinely attempts to be a doctrinal work, *despite* its inevitable self-deconstruction. 
+Therefore, one point of contention between my reading framework (not as it was presented, but a refined development of it) and the resolute readings is that the *Tractatus* is not merely a performative book, in which nonsense disguised as sense leads the reader to acknowledge his own dogmatic temptations and be content with silence. I see the *Tractatus* as a book that genuinely attempts to be a doctrinal work, *despite* its inevitable self-deconstruction. 
 
 Otherwise, it's quite difficult to make sense of Wittgenstein when, in a letter to Russell from 1919, he claims that "the “main point” of the book “is the theory of what can be expressed (gesagt) by propositions – i.e. by language – (and, which comes to the same, what can be thought) and what can not be expressed by prop[osition]s, but only shown (gezeigt); which, I believe, is the cardinal problem of philosophy.”" Also, the very existence of the 1929 paper “Some Remarks on Logical Form”, in which "Wittgenstein mounts an effort to salvage his account of elementary propositions from the difficulty posed by propositions ascribing colors, and qualities that come in degrees." If the book has a fully therapeutic/performative aim from the start, it's difficult to understand why Wittgenstein would embark at such an endeavor.
 
