@@ -76,8 +76,8 @@ Wiley.
 
 <!--webpage, one author-->
 <a id="fernandes2025"> Fernandes, H. (2025).</a>  
-*A Non-philosopher's Introduction to Wittgenstein.*  
+*Distinct ways of engaging with mathematics.*  
 Personal Blog.
-<a href="https://hilariofernandes.github.io/wittgenstein/2025/10/13/anpitw.html" class="reference-link">
-  https://hilariofernandes.github.io/<wbr>wittgenstein/<wbr>2025/<wbr>10/<wbr>13/<wbr>anpitw.html
+<a href="https://hilariofernandes.github.io/statistics,%20mathematics%20and%20computer%20science/2025/03/16/dwoewm.html" class="reference-link">
+  https://hilariofernandes.github.io/<wbr>statistics,%20mathematics%20and%20computer%20science/<wbr>2025/<wbr>03/<wbr>16/<wbr>dwoewm.html
 </a>
