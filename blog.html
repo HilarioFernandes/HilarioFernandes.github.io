@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+permalink: /blog/
 ---
 <h1>Hilario's Blog</h1>
 <p>
@@ -9,11 +10,12 @@ title: Blog
 {% assign categories = site.posts | map: 'category' | uniq %}
 {% for category in categories %}
     <h2>{{ category }}</h2>
-    <ul>
+    <ul class="post-list">
         {% for post in site.posts %}
             {% if post.category == category %}
                 <li>
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - <em>{{ post.date | date: "%B %d, %Y" }}</em>
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
                 </li>
             {% endif %}
         {% endfor %}

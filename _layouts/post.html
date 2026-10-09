@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    
     <!-- MathJax for LaTeX rendering -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        };
+    </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <style>
@@ -132,7 +138,7 @@
 </head>
 <body>
     <div class="back-to-blog">
-        <a href="{{ '/blog' | relative_url }}">&larr; Back to Blog Home</a>
+        <a href="{{ '/blog/' | relative_url }}">&larr; Back to Blog Home</a>
     </div>
 
     <article>
@@ -142,7 +148,7 @@
     </article>
 
     <div class="back-to-blog">
-        <a href="{{ '/blog' | relative_url }}">&larr; Back to Blog Home</a>
+        <a href="{{ '/blog/' | relative_url }}">&larr; Back to Blog Home</a>
     </div>
 </body>
 </html>
