@@ -10,27 +10,128 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Portfolio card enhancements */
+			#portfolio .row {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			#portfolio .row > [class*="col-"] {
+				display: flex;
+			}
+
+			.item {
+				background: #fff;
+				border-radius: 8px;
+				overflow: hidden;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+				transition: transform 0.25s ease, box-shadow 0.25s ease;
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				margin-bottom: 30px;
+			}
+
+			.item:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+			}
+
+			.item .image.fit {
+				margin: 0;
+			}
+
+			.item .image.fit img {
+				height: 180px;
+				object-fit: cover;
+				display: block;
+				transition: opacity 0.2s ease;
+			}
+
+			.item:hover .image.fit img {
+				opacity: 0.95;
+			}
+
+			.item-content {
+				padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+				text-align: left;
+			}
+
+			.item header {
+				background: transparent !important;
+				padding: 0 !important;
+				margin: 0 0 0.5rem 0 !important;
+			}
+
+			.item header h3 {
+				font-size: 1.05rem !important;
+				font-weight: 600;
+				line-height: 1.35;
+				margin: 0;
+			}
+
+			.item header h3 a {
+				color: #333;
+				text-decoration: none;
+				border-bottom: none;
+				transition: color 0.2s;
+			}
+
+			.item header h3 a:hover {
+				color: #007BFF;
+			}
+
+			.item-tag {
+				font-size: 0.8rem;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				color: #007BFF;
+				margin: 0 0 0.6rem 0 !important;
+				text-transform: uppercase;
+			}
+
+			.item-desc {
+				font-size: 0.88rem;
+				line-height: 1.5;
+				color: #666;
+				margin: 0 !important;
+				flex-grow: 1;
+			}
+
+			/* About Me link style */
+			#about a {
+				color: #007BFF;
+				text-decoration: underline;
+			}
+
+			#about a:hover {
+				color: #0056b3;
+			}
+		</style>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var links = document.querySelectorAll("#nav a");
+
+				links.forEach(link => {
+					link.addEventListener("click", function(e) {
+						var href = this.getAttribute("href");
+
+						if (href.startsWith("#")) {
+							e.preventDefault();
+							var target = document.querySelector(href);
+							if (target) {
+								window.scrollTo({ top: target.offsetTop, behavior: "smooth" });
+							}
+						}
+					});
+				});
+			});
+		</script>
 	</head>
-	<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var links = document.querySelectorAll("#nav a");
-
-        links.forEach(link => {
-            link.addEventListener("click", function(e) {
-                var href = this.getAttribute("href");
-
-                if (href.startsWith("#")) {
-                    e.preventDefault();
-                    var target = document.querySelector(href);
-                    if (target) {
-                        window.scrollTo({ top: target.offsetTop, behavior: "smooth" });
-                    }
-                }
-            });
-        });
-    });
-</script>
-
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -50,6 +151,7 @@
 							<ul>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="/blog/" id="blog-link"><span class="icon solid fa-pen-nib">Blog</span></a></li>
 								<li><a href="#links" id="links-link"><span class="icon solid fa-link">Links</span></a></li>
 							</ul>
 						</nav>
@@ -71,7 +173,7 @@
 
 							<p>I'm a data scientist with a background in statistical modeling, predictive analysis, and hands-on work in Python and R. My experience spans applications in various fields (materials science, environmental data, financial data, etc), often through collaborative research projects.</p>
 							<p>I hold a PhD in Statistics and an MSc in Pure and Applied Mathematics, and I've had the chance to study and work both in Brazil and abroad, including as a visiting scholar at U.S. universities.</p>
-							<p>In this website you will find my project portfolio, as well as links to my blog and LinkedIn/GitHub profiles.</p>
+							<p>On this website you will find my project portfolio, as well as links to my <a href="/blog/">blog</a> and <a href="https://www.linkedin.com/in/hilario-fernandes-0a1412191/" target="_blank" rel="noopener noreferrer">LinkedIn</a> / <a href="https://github.com/HilarioFernandes" target="_blank" rel="noopener noreferrer">GitHub</a> profiles.</p>
 
 						</div>
 					</section>
@@ -90,51 +192,66 @@
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://github.com/HilarioFernandes/Natural-Number-Game" class="image fit"><img src="images/BlueChecks.png" alt="" /></a>
-										<header>
-											<h3>Solutions to the Natural Number Game (WIP)</h3>
-										</header>
-										<p>Type Theory | Lean</p>
+										<a href="https://github.com/HilarioFernandes/Natural-Number-Game" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/BlueChecks.png" alt="Solutions to the Natural Number Game" /></a>
+										<div class="item-content">
+											<header>
+												<h3><a href="https://github.com/HilarioFernandes/Natural-Number-Game" target="_blank" rel="noopener noreferrer">Solutions to the Natural Number Game (WIP)</a></h3>
+											</header>
+											<p class="item-tag">Type Theory | Lean</p>
+											<p class="item-desc">Formalized mathematical proofs and interactive arithmetic solutions developed in Lean.</p>
+										</div>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://github.com/HilarioFernandes/WaveletBootstrap" class="image fit"><img src="images/OceanShear3.png" alt="" /></a>
-										<header>
-											<h3>Wavelets, bootstrap and quasi U-statistics</h3>
-										</header>
-										<p>Time series analysis | R</p>
+										<a href="https://github.com/HilarioFernandes/WaveletBootstrap" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/OceanShear3.png" alt="Wavelets, bootstrap and quasi U-statistics" /></a>
+										<div class="item-content">
+											<header>
+												<h3><a href="https://github.com/HilarioFernandes/WaveletBootstrap" target="_blank" rel="noopener noreferrer">Wavelets, bootstrap and quasi U-statistics</a></h3>
+											</header>
+											<p class="item-tag">Time series analysis | R</p>
+											<p class="item-desc">Bootstrap estimation and wavelet-based analysis for nonstationary time series and quasi U-statistics.</p>
+										</div>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://github.com/HilarioFernandes/GAMs" class="image fit"><img src="images/GAMs.png" alt="" /></a>
-										<header>
-											<h3>Generalized additive models</h3>
-										</header>
-										<p>Regression | R</p>
+										<a href="https://github.com/HilarioFernandes/GAMs" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/GAMs.png" alt="Generalized additive models" /></a>
+										<div class="item-content">
+											<header>
+												<h3><a href="https://github.com/HilarioFernandes/GAMs" target="_blank" rel="noopener noreferrer">Generalized additive models</a></h3>
+											</header>
+											<p class="item-tag">Regression | R</p>
+											<p class="item-desc">Exploration and implementations of generalized additive models (GAMs) for flexible non-linear regression.</p>
+										</div>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://github.com/HilarioFernandes/Classification-algorithms" class="image fit"><img src="images/Class.png" alt="" /></a>
-										<header>
-											<h3>Classification algorithms</h3>
-										</header>
-										<p>Classification | R</p>
+										<a href="https://github.com/HilarioFernandes/Classification-algorithms" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/Class.png" alt="Classification algorithms" /></a>
+										<div class="item-content">
+											<header>
+												<h3><a href="https://github.com/HilarioFernandes/Classification-algorithms" target="_blank" rel="noopener noreferrer">Classification algorithms</a></h3>
+											</header>
+											<p class="item-tag">Classification | R</p>
+											<p class="item-desc">Implementations and empirical benchmarks across classical and contemporary classification models in R.</p>
+										</div>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://github.com/HilarioFernandes/KacMoodyGrobner" class="image fit"><img src="images/kacmoody.png" alt="" /></a>
-										<header>
-											<h3>Grobner Bases for Kac-Moody Algebras</h3>
-										</header>
-										<p>Computational Algebra | Python</p>
+										<a href="https://github.com/HilarioFernandes/KacMoodyGrobner" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/kacmoody.png" alt="Grobner Bases for Kac-Moody Algebras" /></a>
+										<div class="item-content">
+											<header>
+												<h3><a href="https://github.com/HilarioFernandes/KacMoodyGrobner" target="_blank" rel="noopener noreferrer">Grobner Bases for Kac-Moody Algebras</a></h3>
+											</header>
+											<p class="item-tag">Computational Algebra | Python</p>
+											<p class="item-desc">Algorithmic computation in Python for Gröbner bases of universal enveloping algebras of Kac-Moody algebras.</p>
+										</div>
 									</article>
 								</div>
 							</div>
@@ -153,8 +270,8 @@
 
 							<ul class="icons">
 								<li><a href="/blog/" class="icon solid fa-blog"><span class="label">Blog</span></a></li>
-								<li><a href="https://www.linkedin.com/in/hilario-fernandes-0a1412191/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/HilarioFernandes" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/hilario-fernandes-0a1412191/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/HilarioFernandes" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
 							</ul>
 
 						</div>
