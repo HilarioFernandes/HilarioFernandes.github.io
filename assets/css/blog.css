@@ -34,7 +34,7 @@
     --radius-md: 10px;
     --radius-lg: 14px;
 
-    --content-max-width: 48rem; /* ~768px for optimal reading */
+    --content-max-width: 55rem; /* ~880px - comfortably wider for computer screens */
 }
 
 /* Base resets & box sizing */
@@ -403,6 +403,10 @@ ul.post-list {
     color: var(--text-heading);
 }
 
+.post-content p {
+    max-width: 72ch;
+}
+
 /* Blockquotes */
 blockquote {
     border-left: 4px solid var(--primary);
@@ -412,6 +416,7 @@ blockquote {
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     color: var(--text-secondary);
     font-style: italic;
+    max-width: 72ch;
 }
 
 blockquote p:last-child {
@@ -422,6 +427,7 @@ blockquote p:last-child {
 article ul, article ol {
     padding-left: 1.5rem;
     margin-bottom: 1.25em;
+    max-width: 72ch;
 }
 
 article li {
