@@ -3,124 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-
-    <style>
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            line-height: 1.7;
-            margin: 0;
-            padding: 40px 20px;
-            background-color: #fafafa;
-            color: #333;
-        }
-
-        /* Layout container */
-        main {
-            max-width: 800px;
-            margin: auto;
-            padding: 30px 40px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        /* Header styles */
-        header {
-            max-width: 800px;
-            margin: 0 auto 20px auto;
-        }
-
-        header nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 15px;
-        }
-
-        header nav ul li a {
-            color: #007BFF;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        header nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Headings */
-        h1 {
-            font-size: 2.4rem;
-            margin-bottom: 1rem;
-            color: #222;
-        }
-
-        h2 {
-            font-size: 1.6rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: #222;
-        }
-
-        /* Post list */
-        ul.post-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        ul.post-list li {
-            margin-bottom: 1rem;
-        }
-
-        ul.post-list li a {
-            font-size: 1.05rem;
-            color: #007BFF;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        ul.post-list li a:hover {
-            text-decoration: underline;
-        }
-
-        ul.post-list li .post-date {
-            color: #777;
-            font-size: 0.9rem;
-            margin-left: 8px;
-            font-style: italic;
-        }
-
-        /* Footer styles */
-        footer {
-            max-width: 800px;
-            margin: 40px auto 0 auto;
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #eaeaea;
-            color: #777;
-        }
-    </style>
+    <title>{{ page.title | default: "Blog" }} | Hilario Fernandes</title>
+    <link rel="stylesheet" href="{{ '/assets/css/fontawesome-all.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Website Home</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="{{ '/blog/' | relative_url }}" class="brand">
+                <span>Hilario Fernandes</span>
+                <span class="brand-badge">Blog</span>
+            </a>
+            <nav>
+                <ul class="site-nav">
+                    <li><a href="{{ '/' | relative_url }}"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="{{ '/#portfolio' | relative_url }}"><i class="fas fa-th"></i> Portfolio</a></li>
+                    <li><a href="https://github.com/HilarioFernandes" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/hilario-fernandes-0a1412191/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        {{ content }}
-    </main>
+    <div class="page-wrapper">
+        <main class="content-card">
+            {{ content }}
+        </main>
+    </div>
 
-    <footer>
-        <p>© {{ site.time | date: "%Y" }} Hilario Fernandes</p>
+    <footer class="site-footer">
+        <p>&copy; {{ site.time | date: "%Y" }} Hilario Fernandes &middot; <a href="{{ '/' | relative_url }}">Home</a> &middot; <a href="{{ '/blog/' | relative_url }}">Blog</a> &middot; <a href="https://github.com/HilarioFernandes" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
 </body>
 </html>
